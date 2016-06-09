@@ -1,0 +1,255 @@
+$ vagrant provision
+==> default: Running provisioner: shell...
+==> default: + grep -q keepcache=0 /etc/yum.conf
+==> default: + rpmquery --quiet epel-release
+==> default: + rpmquery --quiet pgdg-centos95
+==> default: + rpmquery --quiet libdap.x86_64
+==> default: + yum -y erase libdap.x86_64
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Remove Process
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package libdap.x86_64 0:3.18.0-1.el6 will be erased
+==> default: --> Finished Dependency Resolution
+==> default: 
+==> default: Dependencies Resolved
+==> default: 
+==> default: ================================================================================
+==> default:  Package    Arch       Version           Repository                        Size
+==> default: ================================================================================
+==> default: Removing:
+==> default:  libdap     x86_64     3.18.0-1.el6      @/libdap-3.18.0-1.el6.x86_64     2.6 M
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Remove        1 Package(s)
+==> default: Installed size: 2.6 M
+==> default: Downloading Packages:
+==> default: Running rpm_check_debug
+==> default: Running Transaction Test
+==> default: Transaction Test Succeeded
+==> default: Running Transaction
+  Erasing    : libdap-3.18.0-1.el6.x86_64                                   1/1
+==> default:  
+  Verifying  : libdap-3.18.0-1.el6.x86_64                                   1/1
+==> default:  
+==> default: 
+==> default: Removed:
+==> default:   libdap.x86_64 0:3.18.0-1.el6                                                  
+==> default: Complete!
+==> default: + yum -y install gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Install Process
+==> default: Loading mirror speeds from cached hostfile
+==> default:  * base: mirror.cogentco.com
+==> default:  * epel: mirror.cogentco.com
+==> default:  * extras: reflector.westga.edu
+==> default:  * updates: chicago.gaminghost.co
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be installed
+==> default: --> Processing Dependency: libdapserver.so.7()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Running transaction check
+==> default: ---> Package libdap.x86_64 0:3.11.0-1.el6 will be installed
+==> default: --> Finished Dependency Resolution
+==> default: 
+==> default: Dependencies Resolved
+==> default: 
+==> default: ================================================================================
+==> default:  Package           Arch           Version                  Repository      Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  gdal-libs         x86_64         1.9.2-7.rhel6            pgdg95         3.8 M
+==> default: Installing for dependencies:
+==> default:  libdap            x86_64         3.11.0-1.el6             epel           445 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install       2 Package(s)
+==> default: Total size: 4.2 M
+==> default: Installed size: 14 M
+==> default: Downloading Packages:
+==> default: Running rpm_check_debug
+==> default: Running Transaction Test
+==> default: Transaction Test Succeeded
+==> default: Running Transaction
+  Installing : libdap-3.11.0-1.el6.x86_64                                   1/2
+==> default:  
+  Installing : gdal-libs-1.9.2-7.rhel6.x86_64                               2/2
+==> default:  
+  Verifying  : gdal-libs-1.9.2-7.rhel6.x86_64                               1/2
+==> default:  
+  Verifying  : libdap-3.11.0-1.el6.x86_64                                   2/2
+==> default:  
+==> default: 
+==> default: Installed:
+==> default:   gdal-libs.x86_64 0:1.9.2-7.rhel6                                              
+==> default: 
+==> default: Dependency Installed:
+==> default:   libdap.x86_64 0:3.11.0-1.el6                                                  
+==> default: Complete!
+==> default: + yum -y install /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Install Process
+==> default: Examining /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm: bes-3.17.2-2.static.el6.x86_64
+==> default: Marking /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm to be installed
+==> default: Loading mirror speeds from cached hostfile
+==> default:  * base: mirror.cogentco.com
+==> default:  * epel: mirror.cogentco.com
+==> default:  * extras: reflector.westga.edu
+==> default:  * updates: chicago.gaminghost.co
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package bes.x86_64 0:3.17.2-2.static.el6 will be installed
+==> default: --> Processing Dependency: libdap >= 3.18.0 for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libicu >= 3.6 for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libdap.so.23()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libdapclient.so.6()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libicudata.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libicui18n.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libicuuc.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Running transaction check
+==> default: ---> Package bes.x86_64 0:3.17.2-2.static.el6 will be installed
+==> default: --> Processing Dependency: libdap >= 3.18.0 for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libdap.so.23()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: --> Processing Dependency: libdapclient.so.6()(64bit) for package: bes-3.17.2-2.static.el6.x86_64
+==> default: ---> Package libicu.x86_64 0:4.2.1-14.el6 will be installed
+==> default: --> Finished Dependency Resolution
+==> default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)
+==> default:            Requires: libdapclient.so.6()(64bit)
+==> default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)
+==> default:            Requires: libdap.so.23()(64bit)
+==> default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)
+==> default:            Requires: libdap >= 3.18.0
+==> default:            Installed: libdap-3.11.0-1.el6.x86_64 (@epel)
+==> default:                libdap = 3.11.0-1.el6
+==> default:  You could try using --skip-broken to work around the problem
+==> default:  You could try running: rpm -Va --nofiles --nodigest
+==> default: + yum list installed libdap
+==> default: Loaded plugins: fastestmirror
+==> default: Installed Packages
+==> default: libdap.x86_64                         3.11.0-1.el6                         @epel
+==> default: + rpmquery --quiet libdap.x86_64
+==> default: + yum -y erase libdap.x86_64
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Remove Process
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package libdap.x86_64 0:3.11.0-1.el6 will be erased
+==> default: --> Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Processing Dependency: libdapserver.so.7()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Running transaction check
+==> default: ---> Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be erased
+==> default: --> Finished Dependency Resolution
+==> default: 
+==> default: Dependencies Resolved
+==> default: 
+==> default: ================================================================================
+==> default:  Package           Arch           Version                 Repository       Size
+==> default: ================================================================================
+==> default: Removing:
+==> default:  libdap            x86_64         3.11.0-1.el6            @epel           1.3 M
+==> default: Removing for dependencies:
+==> default:  gdal-libs         x86_64         1.9.2-7.rhel6           @pgdg95          13 M
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Remove        2 Package(s)
+==> default: Installed size: 14 M
+==> default: Downloading Packages:
+==> default: Running rpm_check_debug
+==> default: Running Transaction Test
+==> default: Transaction Test Succeeded
+==> default: Running Transaction
+  Erasing    : gdal-libs-1.9.2-7.rhel6.x86_64                               1/2
+==> default:  
+  Erasing    : libdap-3.11.0-1.el6.x86_64                                   2/2
+==> default:  
+  Verifying  : gdal-libs-1.9.2-7.rhel6.x86_64                               1/2
+==> default:  
+  Verifying  : libdap-3.11.0-1.el6.x86_64                                   2/2
+==> default:  
+==> default: 
+==> default: Removed:
+==> default:   libdap.x86_64 0:3.11.0-1.el6                                                  
+==> default: 
+==> default: Dependency Removed:
+==> default:   gdal-libs.x86_64 0:1.9.2-7.rhel6                                              
+==> default: Complete!
+==> default: + yum -y install /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Install Process
+==> default: Examining /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm: libdap-3.18.0-1.el6.x86_64
+==> default: Marking /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm to be installed
+==> default: Loading mirror speeds from cached hostfile
+==> default:  * base: mirror.cogentco.com
+==> default:  * epel: mirror.cogentco.com
+==> default:  * extras: reflector.westga.edu
+==> default:  * updates: chicago.gaminghost.co
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package libdap.x86_64 0:3.18.0-1.el6 will be installed
+==> default: --> Finished Dependency Resolution
+==> default: 
+==> default: Dependencies Resolved
+==> default: 
+==> default: ================================================================================
+==> default:  Package    Arch       Version            Repository                       Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  libdap     x86_64     3.18.0-1.el6       /libdap-3.18.0-1.el6.x86_64     2.6 M
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install       1 Package(s)
+==> default: Total size: 2.6 M
+==> default: Installed size: 2.6 M
+==> default: Downloading Packages:
+==> default: Running rpm_check_debug
+==> default: Running Transaction Test
+==> default: Transaction Test Succeeded
+==> default: Running Transaction
+  Installing : libdap-3.18.0-1.el6.x86_64                                   1/1
+==> default:  
+  Verifying  : libdap-3.18.0-1.el6.x86_64                                   1/1
+==> default:  
+==> default: 
+==> default: Installed:
+==> default:   libdap.x86_64 0:3.18.0-1.el6                                                  
+==> default: Complete!
+==> default: + yum -y install gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: Loaded plugins: fastestmirror
+==> default: Setting up Install Process
+==> default: Loading mirror speeds from cached hostfile
+==> default:  * base: mirror.cogentco.com
+==> default:  * epel: mirror.cogentco.com
+==> default:  * extras: reflector.westga.edu
+==> default:  * updates: chicago.gaminghost.co
+==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be installed
+==> default: --> Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64
+==> default: --> Finished Dependency Resolution
+==> default: Error: Package: gdal-libs-1.9.2-7.rhel6.x86_64 (pgdg95)
+==> default:            Requires: libdapclient.so.3()(64bit)
+==> default:            Available: libdap-3.11.0-1.el6.x86_64 (epel)
+==> default:                libdapclient.so.3()(64bit)
+==> default:            Installed: libdap-3.18.0-1.el6.x86_64 (@/libdap-3.18.0-1.el6.x86_64)
+==> default:                Not found
+==> default: Error: Package: gdal-libs-1.9.2-7.rhel6.x86_64 (pgdg95)
+==> default:            Requires: libdap.so.11()(64bit)
+==> default:            Available: libdap-3.11.0-1.el6.x86_64 (epel)
+==> default:                libdap.so.11()(64bit)
+==> default:            Installed: libdap-3.18.0-1.el6.x86_64 (@/libdap-3.18.0-1.el6.x86_64)
+==> default:                Not found
+==> default:  You could try using --skip-broken to work around the problem
+==> default:  You could try running: rpm -Va --nofiles --nodigest
+==> default: + yum list installed libdap
+==> default: Loaded plugins: fastestmirror
+==> default: Installed Packages
+==> default: libdap.x86_64             3.18.0-1.el6              @/libdap-3.18.0-1.el6.x86_64
+$ 

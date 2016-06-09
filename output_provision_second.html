@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Hack; color: #839496; background-color: #012b36}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Hack; color: #93a1a1; background-color: #012b36}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Hack; color: #ff512d; background-color: #012b36}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Hack; color: #3def2d; background-color: #012b36}
+    span.s1 {font-variant-ligatures: no-common-ligatures}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">$ vagrant provision</span></p>
+<p class="p2"><span class="s1"><b>==&gt; default: Running provisioner: shell...</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + grep -q keepcache=0 /etc/yum.conf</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + rpmquery --quiet epel-release</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + rpmquery --quiet pgdg-centos95</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + rpmquery --quiet libdap.x86_64</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y erase libdap.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Remove Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package libdap.x86_64 0:3.18.0-1.el6 will be erased</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependencies Resolved</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>Package<span class="Apple-converted-space">    </span>Arch <span class="Apple-converted-space">      </span>Version <span class="Apple-converted-space">          </span>Repository<span class="Apple-converted-space">                        </span>Size</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Removing:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>libdap <span class="Apple-converted-space">    </span>x86_64 <span class="Apple-converted-space">    </span>3.18.0-1.el6<span class="Apple-converted-space">      </span>@/libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">    </span>2.6 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Summary</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Remove<span class="Apple-converted-space">        </span>1 Package(s)</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed size: 2.6 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Downloading Packages:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running rpm_check_debug</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction Test</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Test Succeeded</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction</b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Erasing<span class="Apple-converted-space">    </span>: libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>1/1</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>1/1</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Removed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>libdap.x86_64 0:3.18.0-1.el6 <span class="Apple-converted-space">                                                 </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Complete!</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y install gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Install Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loading mirror speeds from cached hostfile</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* base: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* epel: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* extras: reflector.westga.edu</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* updates: chicago.gaminghost.co</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapserver.so.7()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package libdap.x86_64 0:3.11.0-1.el6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependencies Resolved</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>Package <span class="Apple-converted-space">          </span>Arch <span class="Apple-converted-space">          </span>Version<span class="Apple-converted-space">                  </span>Repository<span class="Apple-converted-space">      </span>Size</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installing:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>gdal-libs <span class="Apple-converted-space">        </span>x86_64 <span class="Apple-converted-space">        </span>1.9.2-7.rhel6<span class="Apple-converted-space">            </span>pgdg95 <span class="Apple-converted-space">        </span>3.8 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installing for dependencies:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>libdap<span class="Apple-converted-space">            </span>x86_64 <span class="Apple-converted-space">        </span>3.11.0-1.el6 <span class="Apple-converted-space">            </span>epel <span class="Apple-converted-space">          </span>445 k</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Summary</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Install <span class="Apple-converted-space">      </span>2 Package(s)</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Total size: 4.2 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed size: 14 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Downloading Packages:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running rpm_check_debug</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction Test</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Test Succeeded</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction</b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Installing : libdap-3.11.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>1/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Installing : gdal-libs-1.9.2-7.rhel6.x86_64 <span class="Apple-converted-space">                              </span>2/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: gdal-libs-1.9.2-7.rhel6.x86_64 <span class="Apple-converted-space">                              </span>1/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: libdap-3.11.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>2/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>gdal-libs.x86_64 0:1.9.2-7.rhel6 <span class="Apple-converted-space">                                             </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependency Installed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>libdap.x86_64 0:3.11.0-1.el6 <span class="Apple-converted-space">                                                 </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Complete!</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y install /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Install Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Examining /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Marking /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/bes-3.17.2-2.static.el6.x86_64.rpm to be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loading mirror speeds from cached hostfile</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* base: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* epel: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* extras: reflector.westga.edu</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* updates: chicago.gaminghost.co</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package bes.x86_64 0:3.17.2-2.static.el6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap &gt;= 3.18.0 for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libicu &gt;= 3.6 for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap.so.23()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapclient.so.6()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libicudata.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libicui18n.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libicuuc.so.42()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package bes.x86_64 0:3.17.2-2.static.el6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap &gt;= 3.18.0 for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap.so.23()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapclient.so.6()(64bit) for package: bes-3.17.2-2.static.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package libicu.x86_64 0:4.2.1-14.el6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Requires: libdapclient.so.6()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Requires: libdap.so.23()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: Error: Package: bes-3.17.2-2.static.el6.x86_64 (/bes-3.17.2-2.static.el6.x86_64)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Requires: libdap &gt;= 3.18.0</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Installed: libdap-3.11.0-1.el6.x86_64 (@epel)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">                </span>libdap = 3.11.0-1.el6</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>You could try using --skip-broken to work around the problem</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>You could try running: rpm -Va --nofiles --nodigest</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum list installed libdap</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed Packages</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: libdap.x86_64 <span class="Apple-converted-space">                        </span>3.11.0-1.el6 <span class="Apple-converted-space">                        </span>@epel</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + rpmquery --quiet libdap.x86_64</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y erase libdap.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Remove Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package libdap.x86_64 0:3.11.0-1.el6 will be erased</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapserver.so.7()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be erased</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependencies Resolved</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>Package <span class="Apple-converted-space">          </span>Arch <span class="Apple-converted-space">          </span>Version <span class="Apple-converted-space">                </span>Repository <span class="Apple-converted-space">      </span>Size</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Removing:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>libdap<span class="Apple-converted-space">            </span>x86_64 <span class="Apple-converted-space">        </span>3.11.0-1.el6<span class="Apple-converted-space">            </span>@epel <span class="Apple-converted-space">          </span>1.3 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Removing for dependencies:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>gdal-libs <span class="Apple-converted-space">        </span>x86_64 <span class="Apple-converted-space">        </span>1.9.2-7.rhel6 <span class="Apple-converted-space">          </span>@pgdg95<span class="Apple-converted-space">          </span>13 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Summary</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Remove<span class="Apple-converted-space">        </span>2 Package(s)</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed size: 14 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Downloading Packages:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running rpm_check_debug</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction Test</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Test Succeeded</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction</b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Erasing<span class="Apple-converted-space">    </span>: gdal-libs-1.9.2-7.rhel6.x86_64 <span class="Apple-converted-space">                              </span>1/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Erasing<span class="Apple-converted-space">    </span>: libdap-3.11.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>2/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: gdal-libs-1.9.2-7.rhel6.x86_64 <span class="Apple-converted-space">                              </span>1/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: libdap-3.11.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>2/2</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Removed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>libdap.x86_64 0:3.11.0-1.el6 <span class="Apple-converted-space">                                                 </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependency Removed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>gdal-libs.x86_64 0:1.9.2-7.rhel6 <span class="Apple-converted-space">                                             </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Complete!</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y install /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Install Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Examining /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm: libdap-3.18.0-1.el6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Marking /vagrant/hyrax_releases/binary/hyrax-1.13.1/centos6.6/libdap-3.18.0-1.el6.x86_64.rpm to be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loading mirror speeds from cached hostfile</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* base: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* epel: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* extras: reflector.westga.edu</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* updates: chicago.gaminghost.co</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package libdap.x86_64 0:3.18.0-1.el6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Dependencies Resolved</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>Package<span class="Apple-converted-space">    </span>Arch <span class="Apple-converted-space">      </span>Version<span class="Apple-converted-space">            </span>Repository <span class="Apple-converted-space">                      </span>Size</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installing:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>libdap <span class="Apple-converted-space">    </span>x86_64 <span class="Apple-converted-space">    </span>3.18.0-1.el6 <span class="Apple-converted-space">      </span>/libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">    </span>2.6 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Summary</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ================================================================================</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Install <span class="Apple-converted-space">      </span>1 Package(s)</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Total size: 2.6 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed size: 2.6 M</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Downloading Packages:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running rpm_check_debug</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction Test</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Transaction Test Succeeded</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Running Transaction</b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Installing : libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>1/1</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b><span class="Apple-converted-space">  </span>Verifying<span class="Apple-converted-space">  </span>: libdap-3.18.0-1.el6.x86_64 <span class="Apple-converted-space">                                  </span>1/1</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed:</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: <span class="Apple-converted-space">  </span>libdap.x86_64 0:3.18.0-1.el6 <span class="Apple-converted-space">                                                 </span></b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Complete!</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum -y install gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Setting up Install Process</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loading mirror speeds from cached hostfile</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* base: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* epel: mirror.cogentco.com</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* extras: reflector.westga.edu</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>* updates: chicago.gaminghost.co</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Resolving Dependencies</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Running transaction check</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: ---&gt; Package gdal-libs.x86_64 0:1.9.2-7.rhel6 will be installed</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdapclient.so.3()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Processing Dependency: libdap.so.11()(64bit) for package: gdal-libs-1.9.2-7.rhel6.x86_64</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: --&gt; Finished Dependency Resolution</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: Error: Package: gdal-libs-1.9.2-7.rhel6.x86_64 (pgdg95)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Requires: libdapclient.so.3()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Available: libdap-3.11.0-1.el6.x86_64 (epel)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">                </span>libdapclient.so.3()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Installed: libdap-3.18.0-1.el6.x86_64 (@/libdap-3.18.0-1.el6.x86_64)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">                </span>Not found</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: Error: Package: gdal-libs-1.9.2-7.rhel6.x86_64 (pgdg95)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Requires: libdap.so.11()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Available: libdap-3.11.0-1.el6.x86_64 (epel)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">                </span>libdap.so.11()(64bit)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">            </span>Installed: libdap-3.18.0-1.el6.x86_64 (@/libdap-3.18.0-1.el6.x86_64)</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">                </span>Not found</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>You could try using --skip-broken to work around the problem</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default:<span class="Apple-converted-space">  </span>You could try running: rpm -Va --nofiles --nodigest</b></span></p>
+<p class="p3"><span class="s1"><b>==&gt; default: + yum list installed libdap</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Loaded plugins: fastestmirror</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: Installed Packages</b></span></p>
+<p class="p4"><span class="s1"><b>==&gt; default: libdap.x86_64 <span class="Apple-converted-space">            </span>3.18.0-1.el6<span class="Apple-converted-space">              </span>@/libdap-3.18.0-1.el6.x86_64</b></span></p>
+<p class="p1"><span class="s1">$<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
